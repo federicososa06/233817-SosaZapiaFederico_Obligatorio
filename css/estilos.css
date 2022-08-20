@@ -1,0 +1,549 @@
+/* ----------- GENERALES ----------- */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*
+FUENTES:
+titulo principal: font-family: 'Ubuntu', sans-serif;
+titulos secundarios: font-family: 'Montserrat Alternates', sans-serif;
+texto: font-family: 'Montserrat', sans-serif; 
+
+COLORES: 
+Fondo:
+  #efeae2
+Rojo: 
+  rgba(166, 3, 17, 0.9)
+  #A60311
+
+Crema: 
+  rgba(242, 196, 141,1);
+  #EEBA87
+
+Azul: 
+  rgba(10, 48, 114, 1);
+  #F7F5F1
+*/
+
+h2,
+h3,
+h4,
+input[type="submit"] {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #efeae2;
+}
+
+.textoColorDistinto {
+  color: #e0001b;
+}
+
+/* tamanio contenedor */
+.menorTamanio {
+  width: 1200px;
+  margin: 20px auto;
+  padding: 25px 0;
+}
+
+/* bordes en titulos */
+.menorTamanio header h2 {
+  border-left: rgba(242, 5, 5, 1) 5px solid;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+}
+
+/* ----------- BOTÓN VOLVER AL INICIO ----------- */
+.btnSubirArriba {
+  position: relative;
+}
+
+.btnSubirArriba a {
+  position: fixed;
+  width: 64px;
+  bottom: 50px;
+  right: 75px;
+}
+
+/* ----------- HEADER ----------- */
+.headerParallax {
+  padding: 25px 0 150px 0;
+  width: 100%;
+  background: center fixed url("../img/paralax.jpg");
+  background-size: cover;
+}
+
+/* logo */
+header figure {
+  margin: 50px 0 70px 0;
+  text-align: center;
+}
+header figure img {
+  width: 480px;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+}
+
+/* titulo */
+header h1 {
+  color: #e0001b;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+/* menú */
+header nav ul {
+  padding: 15px;
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 70px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header nav ul li {
+  padding: 10px;
+  margin: 10px;
+}
+
+header nav ul li a {
+  padding: 10px 50px;
+  background-color: rgba(242, 5, 5, 0.8);
+  color: white;
+  font-size: 22px;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+  color: rgba(242, 5, 5, 1);
+  background-color: rgb(242, 196, 141);
+  background-color: #0a3072;
+  color: white;
+}
+
+/* ----------- INFORMACIÓN ----------- */
+
+.seccionInfo {
+  display: flex;
+}
+/* Titulo */
+.seccionInfo header h2 {
+  margin-right: 125px;
+}
+
+/* Info */
+.articleInfoLondres p {
+  text-align: justify;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+/* Lista */
+.articleAntesViajar {
+  padding-left: 30px;
+  margin-left: 30px;
+}
+
+.articleAntesViajar h3 {
+  padding-bottom: 10px;
+}
+
+.articleAntesViajar ol {
+  width: max-content;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.articleAntesViajar ol li {
+  padding: 8px;
+}
+
+/* ----------- QUE HACER ----------- */
+
+.seccionQueHacer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.seccionQueHacer header {
+  width: 100%;
+}
+
+/* tamaño imagenes*/
+.seccionQueHacer figure img {
+  width: 100%;
+  height: 250px;
+}
+
+.padreRelativo {
+  position: relative;
+  width: 32%;
+}
+
+.seccionQueHacer figcaption {
+  margin-top: 15px;
+  letter-spacing: 2px;
+  text-align: justify;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* Nombre de lugares */
+.padreRelativo h4 {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px 20px;
+  top: 190px;
+  position: absolute;
+}
+
+/* ----------- GALERIA ----------- */
+
+.seccionGaleria {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-template-rows: 10% 42% 42%;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.seccionGaleria header {
+  grid-row: 1/2;
+  grid-column: 1/4;
+}
+
+#galeriaUno {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+
+#galeriaDos {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+#galeriaTres {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+#galeriaCuatro {
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+  box-shadow: black;
+}
+
+.imgBox img:hover {
+  filter: brightness(100%);
+}
+
+/* ----------- NEWSLETTER ----------- */
+.seccionNewsletter {
+  background-color: rgba(166, 3, 17, 0.9);
+}
+
+.seccionNewsletter form {
+  display: flex;
+  border: none;
+}
+
+/* Párrafo */
+.seccionNewsletter p {
+  width: 50%;
+  padding: 10px 0;
+  font-size: 22px;
+  color: rgb(242, 196, 141);
+}
+
+/* Email */
+.seccionNewsletter input[type="email"] {
+  width: 35%;
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-color: rgba(242, 196, 141, 0.6);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  font-size: 16px;
+  border: 1px solid white;
+}
+
+.seccionNewsletter input::placeholder {
+  color: black;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.seccionNewsletter input:focus {
+  background-color: rgba(242, 196, 141, 1);
+  color: black;
+  font-size: 16px;
+  border: none;
+}
+
+/* Botón */
+.seccionNewsletter input[type="submit"] {
+  width: 15%;
+  text-transform: uppercase;
+  font-size: 15px;
+  background-color: rgb(242, 196, 141);
+  color: black;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+}
+
+.seccionNewsletter input[type="submit"]:hover {
+  background-color: #0a3072;
+  color: white;
+  cursor: pointer;
+}
+
+/* ----------- TOP 10 ----------- */
+
+.seccionesTopYFamosos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.seccionTop {
+  width: 49%;
+  height: 100%;
+}
+
+.tablaTop10 {
+  width: 100%;
+  padding-top: 10px;
+}
+/* Cabecera */
+.tablaTop10 tr th {
+  background-color: rgb(10, 48, 114);
+  padding: 10px;
+  color: white;
+  text-align: left;
+  margin-bottom: 5px;
+  border: 3px solid #efeae2;
+}
+
+.tablaTop10 tr th:nth-child(3) {
+  width: 125px;
+}
+
+/* Filas */
+.tablaTop10 tr td:nth-child(1) {
+  background-color: rgba(236, 162, 72, 0.3);
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tablaTop10 tr td {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f2c48d;
+  border: 3px solid #efeae2;
+  font-size: 16;
+}
+
+/* ----------- FAMOSOS ----------- */
+
+.seccionFamosos {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.seccionFamosos h2 {
+  margin-left: 20px;
+}
+
+.famoso {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.famoso figure img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.famoso aside h4 {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+.famoso aside p {
+  padding: 5px;
+  justify-content: center;
+}
+
+/* ----------- REGISTRO ----------- */
+.seccionRegistro {
+  height: 100%;
+  background-color: rgb(10, 48, 114);
+}
+
+.seccionRegistro h3 {
+  padding: 45px 0 20px 0;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.seccionRegistro form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-ar;
+  width: 30%;
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 45px;
+  text-align: center;
+}
+
+.seccionRegistro form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 5px;
+  text-align: left;
+  letter-spacing: 3px;
+  color: rgb(242, 196, 141);
+}
+
+.seccionRegistro input {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.seccionRegistro form textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 15px;
+  padding: 15px 15px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+label[for="registroTerminos"] {
+  width: 45%;
+  margin-right: 20px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.seccionRegistro input[type="checkbox"] {
+  width: 5%;
+  margin: auto 0;
+}
+
+.seccionRegistro input[type="checkbox"]:hover,
+.seccionRegistro label[for="registroTerminos"]:hover {
+  cursor: pointer;
+}
+
+.seccionRegistro input[type="submit"] {
+  width: 40%;
+  height: 50px;
+  margin: auto 0;
+  background-color: rgb(242, 196, 141);
+  color: rgb(10, 48, 114);
+
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+}
+
+.seccionRegistro input[type="submit"]:hover {
+  background-color: rgba(242, 5, 5, 1);
+  color: white;
+  cursor: pointer;
+}
+
+/* ----------- FOOTER ----------- */
+.seccionFooter {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(166, 3, 17, 0.8);
+}
+
+.seccionFooter li {
+  width: 64px;
+  height: 64px;
+  background-image: url("../img/iconos.png");
+  display: inline-block;
+}
+
+#twitter {
+  background-position: 0 0;
+}
+#twitter:hover {
+  background-position: 0 -64px;
+  cursor: pointer;
+}
+
+#instagram {
+  background-position: -64px 0;
+}
+#instagram:hover {
+  background-position: -64px -64px;
+  cursor: pointer;
+}
+
+#facebook {
+  background-position: -128px 0;
+}
+#facebook:hover {
+  background-position: -128px -64px;
+  cursor: pointer;
+}

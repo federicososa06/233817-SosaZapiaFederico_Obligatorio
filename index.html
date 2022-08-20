@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:ital,wght@0,700;1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="inicio" class="headerParallax">
+        <!-- LOGO -->
+        <figure>
+            <img src="img/logo.png" alt="logo de la ciudad de Londres">
+        </figure>
+        <!-- MENÚ -->
+        <nav>
+            <ul>
+                <li><a href="#anclaInfo">Información</a></li>
+                <li><a href="#anclaQueHacer">Qué hacer</a></li>
+                <li><a href="#anclaGaleria">Galería</a></li>
+                <li><a href="#anclaTopFamosos">Top 10</a></li>
+            </ul>
+        </nav>
+        <!-- TÍTULO -->
+        <h1 class="menorTamanio"> ¡Bienvenido a Londres!</h1>
+
+    </header>
+
+
+    <!-- BOTÓN VOLVER AL INICIO -->
+    <figure class="btnSubirArriba">
+        <a href="#inicio"><img src="img/flecha.png" alt=""></img></a>
+    </figure>
+
+
+    <!-- INFORMACION -->
+    <section id="anclaInfo" class="seccionInfo menorTamanio">
+        <header>
+            <h2>Información</h2>
+        </header>
+
+        <article class="articleInfoLondres">
+            <p> <strong>Londres</strong>, la capital de Inglaterra y del Reino Unido, es una ciudad con una historia que
+                se
+                remonta a la época romana. En su centro se alzan el imponente Palacio del Parlamento, la torre del
+                icónico reloj "Big Ben" y la Abadía de Westminster, lugar de las coronaciones monárquicas británicas. Al
+                otro lado del río Támesis, la rueda de observación London Eye ofrece vistas panorámicas del complejo
+                cultural South Bank y de toda la ciudad</p>
+        </article>
+
+        <article class="articleAntesViajar">
+            <h3 class="textoColorDistinto">¡Antes de viajar!</h3>
+            <ol>
+                <li>Aprender frases locales</li>
+                <li>Buscar eventos importantes</li>
+                <li>Comprobar el clima</li>
+                <li>Cambiar moneda local</li>
+                <li>Tener pasaporte a mano</li>
+            </ol>
+        </article>
+    </section>
+
+
+    <!-- QUÉ HACER -->
+    <section id="anclaQueHacer" class="seccionQueHacer menorTamanio">
+        <header>
+            <h2>¿Qué hacer en <span class="textoColorDistinto">Londres</span>?</h2>
+        </header>
+
+        <article class="articlePalacio padreRelativo">
+            <figure>
+                <img src="img/02.jpg" alt="imagen del Palacio de Buckingham" title="Palacio de Buckingham">
+                <figcaption>
+                    El <strong>palacio de Buckingham</strong> es la residencia oficial del monarca británico en
+                    Londres.​ También se
+                    utiliza para ceremonias oficiales, visitas de Estado y visitas turísticas. Es famoso por albergar
+                    una parte sustancial de la <i>Royal Collection</i>, extraordinario conjunto de obras artísticas
+                    fruto del
+                    coleccionismo real.
+                </figcaption>
+            </figure>
+            <h4>Palacio de Buckingham</h4>
+        </article>
+
+        <article class="articleMuseo padreRelativo">
+            <figure>
+                <img src="img/03.jpg" alt="imagen de Museo de Historia Natural de Londres"
+                    title="Museo de Historia Natural de Londres">
+                <figcaption>El <strong>Museo de Historia Natural de Londres</strong> trata de la Tierra y de las
+                    distintas formas de
+                    vida. Posee una colección compuesta por más de <i>70 millones de especímenes</i> y objetos
+                    relacionados con
+                    el mundo natural.</figcaption>
+            </figure>
+            <h4>Museo de Historia Natural</h4>
+        </article>
+
+        <article class="articleLondonEye padreRelativo">
+            <figure>
+                <img src="img/04.jpg" alt="imagen de London Eye" title="London Eye">
+                <figcaption>
+                    Conocida como <i>Millennium Wheel </i>(Rueda del Milenio), <strong>The London Eye</strong> es un
+                    logro del diseño y la
+                    ingeniería. La sorprendente noria de <i>135 metros de altura</i> se ha convertido en uno de los
+                    iconos más
+                    emblemáticos de la ciudad y de toda Gran Bretaña.
+                </figcaption>
+            </figure>
+            <h4>London Eye</h4>
+        </article>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="anclaGaleria" class="seccionGaleria menorTamanio">
+
+        <header>
+            <h2><span class="textoColorDistinto">Londres</span> en fotos</h2>
+        </header>
+
+        <figure class="imgBox" id="galeriaUno">
+            <img src="img/05.jpg" alt="imagen de una calle en Londres" title="Calle en Londres">
+        </figure>
+
+        <figure class="imgBox" id="galeriaDos">
+            <img src="img/06.jpg" alt="imagen de guardias de la Reina caminando" title="Guardia Real">
+        </figure>
+
+        <figure class="imgBox" id="galeriaTres">
+            <img src="img/07.jpg" alt="imagen de una cabina telefonica en Londres" title="Cabina Telefónica">
+        </figure>
+
+        <figure class="imgBox" id="galeriaCuatro">
+            <img src="img/08.jpg" alt="imagen del Puente de la Torre" title="Puente de la Torre">
+        </figure>
+
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="seccionNewsletter">
+        <form action="" class="menorTamanio">
+            <p>¡Registrate y recibí novedades de <strong>Londres</strong>!</p>
+
+            <input type="email" name="e-mail" id="email" placeholder="Ingrese su e-mail" required>
+
+            <input type="submit" value="¡Quiero!">
+        </form>
+    </section>
+
+    <!-- TOP 10 Y FAMOSOS -->
+    <section id="anclaTopFamosos" class="seccionesTopYFamosos menorTamanio">
+
+        <!-- Top 10 -->
+        <section class="seccionTop">
+            <header>
+                <h2><span class="textoColorDistinto">TOP 10</span> atracciones</h2>
+                <table class="tablaTop10">
+                    <tr>
+                        <th>Pos.</th>
+                        <th>Nombre</th>
+                        <th>Dist. del centro</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>London Eye</td>
+                        <td>3 km</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Abadía de Westminster</td>
+                        <td>1.5 km</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Torre de Londres</td>
+                        <td>4 km</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Palacio de Buckingham</td>
+                        <td>1 km</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Museo Británico</td>
+                        <td>2 km</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Harry Potter: Estudios de Warner Bros</td>
+                        <td>35 km</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td> Catedral de San Pablo</td>
+                        <td>2.5 km</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Crucero por el Támesis</td>
+                        <td>0.5 km</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Museo de cera Madame Tussauds</td>
+                        <td>3.2 km</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>The Shard</td>
+                        <td>4 km</td>
+                    </tr>
+                </table>
+            </header>
+        </section>
+
+        <!-- Famosos -->
+        <section class="seccionFamosos">
+            <header>
+                <h2><span class="textoColorDistinto">Famosos</span> nacidos en Londres</h2>
+            </header>
+
+            <article class="famoso">
+                <figure>
+                    <img src="img/famoso1.jpg" alt="foto Daniel Radcliffe" title="Daniel Radcliffe">
+                </figure>
+                <aside>
+                    <h4>Daniel Radcliffe | 32 años</h4>
+                    <p>Actor</p>
+                </aside>
+            </article>
+
+            <article class="famoso">
+                <figure>
+                    <img src="img/famoso2.jpg" alt="foto Cara Delevigne" title="Cara Delevigne">
+                </figure>
+                <aside>
+                    <h4>Cara Delevigne | 29 años</h4>
+                    <p>Modelo</p>
+                </aside>
+            </article>
+
+            <article class="famoso">
+                <figure>
+                    <img src="img/famoso3.jpg" alt="foto David Beckham" title="David Beckham">
+                </figure>
+                <aside>
+                    <h4>David Beckham | 46 años</h4>
+                    <p>Futbolista</p>
+                </aside>
+            </article>
+        </section>
+
+    </section>
+
+    <!-- REGISTRO -->
+    <section class="seccionRegistro">
+        <h3>¡Quiero viajar a <span class="textoColorDistinto">Londres</span>!</h3>
+        <form action="">
+            <label for="registroNombre">Nombre Completo</label>
+            <input type="text" id="registroNombre" required>
+
+            <label for="registroEmail">Email</label>
+            <input type="email" name="email" id="registroEmail" required>
+
+            <label for="registroComentario">¿Qué te gustaría conocer?</label>
+            <textarea id="registroComentario" required></textarea>
+
+            <input type="checkbox" name="terminos" id="registroTerminos" required>
+            <label for="registroTerminos">Acepto los términos y condiciones</label>
+            <input type="submit" value="Enviar" class="botonEnviar">
+
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="seccionFooter">
+        <ul>
+            <li id="twitter"></li>
+            <li id="instagram"></li>
+            <li id="facebook"></li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
